@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Trivia Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Movie Trivia Quiz</h2>
+        <div>
+            <div class="group">
+                <label for="question1">1. What year was the movie "Forrest Gump" released?</label>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="question1" value="a"> a) 1992
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="question1" value="b"> b) 1994
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="question1" value="c"> c) 1996
+                    </label>
+                </div>
+            </div>
+            <div class="group">
+                <label for="question2">2. Which movie won the Academy Award for Best Picture in 2019?</label>
+                <select class="control" id="question2" name="question2">
+                    <option value="a">a) Parasite</option>
+                    <option value="b">b) 1917</option>
+                    <option value="c">c) Joker</option>
+                </select>
+            </div>
+            <div class="group">
+                <label for="question3">3. Select the movies directed by Christopher Nolan:</label>
+                <div class="check">
+                    <input class="check-input" type="checkbox" value="a" id="question3a" name="question3">
+                    <label class="check-label" for="question3a">a) Inception</label>
+                </div>
+                <div class="check">
+                    <input class="check-input" type="checkbox" value="b" id="question3b" name="question3">
+                    <label class="check-label" for="question3b">b) The Shawshank Redemption</label>
+                </div>
+                <div class="check">
+                    <input class="check-input" type="checkbox" value="c" id="question3c" name="question3">
+                    <label class="check-label" for="question3c">c) Interstellar</label>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+
+        <div id="score"></div>
+
+    </div>
+
+    <!-- Add the script tag to include your JavaScript file -->
+    <script src="main.js"></script>
+
+    <!-- Bootstrap and other scripts remain unchanged -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
